@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@500&display=swap');
+/* font-family: 'Bebas Neue', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+/* font-family: 'Ultra', serif; */
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    font-family:'Bebas Neue', cursive;
+    background-color: #F2D8C9;
+}
+
+/* header */
+
+.encabezado {
+    background-image: url("../img/zapas.jpg");
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    opacity: 80%;
+    grid-area: header;
+}
+
+.encabezado div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    color: black;
+    text-shadow: 4px 3px rgb(212, 126, 141);
+    font-family: 'Ultra', serif;
+}
+
+    
+/* nav */
+
+nav {
+    background-color: #b8cdf8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    grid-area: nav;
+    font-family: 'Ultra', serif;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 2rem;
+    text-shadow: 5px 4px #F2D8C9;
+    background-color: #b8cdf8;
+   
+}
+
+a { 
+    text-decoration: none;
+    font-weight: bold;
+color: black;
+}
+
+/* index */
+/* info principal */
+
+section {
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 50rem;
+    box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+section img {
+    width: 30rem;
+    border-radius: 4px;
+  }
+
+  section button {
+    border-radius: 5px;
+    background-color: #b8cdf8;
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: "bebas neue", cursive;
+
+  }
+
+  .titulo {
+    text-align: center;
+    text-shadow: #b8cdf8  3px 4px ;
+    color: black;
+    margin-top: 20px;
+    font-size: larger;
+  }
+
+
+  /* footer */
+
+  footer {
+    padding-top: 2rem;
+    background-color: #b8cdf8;
+    text-align: center;
+    grid-area: footer;
+    text-shadow: 4px 3px #F2D8C9;
+
+  }
+
+  footer ul li {
+    display: inline-block;
+    margin: 2rem;
+    text-shadow: 4px 3px #F2D8C9;
+  }
+
+
+  /* GRID */
+
+.productoA {
+grid-area: productoA;
+}
+
+
+.productoB {
+grid-area: productoB;    
+}
+
+.productoC {
+    grid-area: productoC;
+    
+}
+
+.productoD {
+    grid-area: productoD;
+}
+
+.titulo {
+    grid-area: titulo;
+}
+
+.gridPadre {
+    display:grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "productoA productoB productoC productoD"
+    "footer footer footer footer";
+}
+
+
+/* vista movil */
+
+@media (max-width:699px) {
+    .gridPadre{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "titulo"
+        "productoA"
+        "productoB"
+        "productoC"
+        "productoD"        
+        "footer"
+        ;
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .encabezado div {
+        max-width: 90%;
+    }
+
+    section {
+        text-align: center;
+    }
+}
+
+
+/* fin del index */
+
+/* ........................................................ */
+
+ 
+/* noticias */
+
+ .noticiasA {
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 50rem;
+    box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: #b8cdf8 4px solid;
+ }
+
+ .noticiaImagen {
+    width: 70rem;
+    border: #a5beee 3px solid;
+
+ }
+
+
+ .noticiasB {
+    margin: 1rem;
+    padding: 0.5rem;
+    height: 50rem;
+    box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 22px 14px -6px rgba(0,0,0,0.47);
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
+   align-items: center;
+   border: #b8cdf8 4px solid;
+ }
+
+ .noticiaImagenDos {
+    width: 70rem;
+    border: #a5beee 3px solid;
+ }
+
+
+
+ /* GRID */
+
+ .noticiasA {
+    grid-area: noticiasA;
+ }
+
+
+ .noticiasB {
+    grid-area: noticiasB;
+ }
+
+
+.gridPadreA {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "noticiasA noticiasA noticiasA noticiasA"
+    "noticiasB noticiasB noticiasB noticiasB"
+    "footer footer footer footer";
+}
+
+/* vista movil */
+
+@media (max-width:699px) {
+    .gridPadreA {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "noticiasA"
+        "noticiasB"
+        "footer";
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .encabezado div {
+        max-width: 90%;
+    }
+
+    section {
+        text-align: center;
+    }
+}
+/* fin de noticias */
+
+
+
+/* ---------------------------------------------- */
+
+
+
+/* productos */
+
+
+/* GRID */
+
+.productoE {
+    grid-area: productoE;
+}
+
+.productoF {
+    grid-area: productoF;
+}
+
+
+.productoG {
+    grid-area: productoG;
+}
+
+.productoH {
+    grid-area: productoH;
+}
+
+
+.gridPadreB {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "productoA productoB productoC productoD"
+    "productoE productoF productoG productoH"
+    "footer footer footer footer";
+}
+
+/* version movil */
+
+@media (max-width:699px) {
+    .gridPadreB {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "titulo"
+        "productoA"
+        "productoB"
+        "productoC"
+        "productoD"
+        "productoE"
+        "productoF"
+        "productoG"
+        "productoH"
+        "footer";
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .encabezado div {
+        max-width: 90%;
+    }
+
+    section {
+        text-align: center;
+    }
+}
+
+/* fin productos */
+
+
+/* ...................... */
+
+
+
+/* inicio historia */
+
+.historia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+ grid-area: historia;
+}
+
+.historiaTexto {
+    font-family: "bebas neue", cursive;
+    grid-area: historiaTexto;
+}
+/* GRID */
+
+.gridPadreC {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav nav nav nav"
+    "titulo titulo titulo titulo"
+    "historia historia historia historia"
+    "footer footer footer footer";
+}
+
+/* version movil */
+
+@media (max-width:699px) {
+    .gridPadre {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "titulo"
+        "historia"
+        "historiaTexto"
+        "footer";
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .encabezado div {
+        max-width: 90%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    .historia {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* fin de historia */
+
+
+
+
+/* ----------------------------------------------------------------------- */
+
+/* cuidado */
+
+/* GRID */
+
+.cuidadoA {
+    background-color: #b8cdf8;
+    font-family: "bebas neue", cursive;
+    grid-area: cuidadoA;
+} 
+
+.cuidadoB {
+    background-color: #d8b8a6;
+    font-family: "bebas neue", cursive;
+    grid-area: cuidadoB;
+
+}
+.cuidadoC {
+    background-color: #a5beee;
+    font-family: "bebas neue", cursive;
+    grid-area: cuidadoC;
+}
+
+.gridPadreD {
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "nav nav nav nav" 
+    "titulo titulo titulo titulo"
+    "cuidadoA cuidadoA cuidadoB cuidadoB"
+    "cuidadoC cuidadoC cuidadoC cuidadoC"
+    "footer footer footer footer";
+}
+
+
+/* version movil */
+@media (max-width:699px) {
+    .gridPadreD {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "titulo"
+        "cuidadoA"
+        "cuidadoB"
+        "cuidadoC"
+        "footer";
+    }
+
+    html {
+        font-size: 80%;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .encabezado div {
+        max-width: 90%;
+    }
+
+    section {
+        text-align: center;
+    }
+
+    
+}
+/* fin de cuidado de tu zapatilla */
