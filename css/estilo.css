@@ -91,7 +91,14 @@ nav ul li {
     margin: 2rem;
     text-shadow: 5px 4px #F2D8C9;
     background-color: #b8cdf8;
-   
+    transition: height 0.5s, width 0.5s;
+
+}
+
+nav ul li :hover {
+    background-color: #F2D8C9;
+height: 10px;
+width: 10px;
 }
 
 a { 
