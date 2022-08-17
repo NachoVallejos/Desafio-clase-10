@@ -44,7 +44,32 @@ body {
     color: black;
     text-shadow: 4px 3px rgb(212, 126, 141);
     font-family: 'Ultra', serif;
+
+    /* animación */
+animation-name: animacion;
+animation-iteration-count: initial;
+animation-timing-function: ease-in;
+animation-duration: 3s;
+animation-delay: 2s;
+
 }
+
+@keyframes animacion {
+0% {
+    opacity: 0;
+
+}
+
+50% {
+    opacity: 50%;
+}
+
+100% {
+    opacity: 100%;
+}
+
+}
+
 
     
 /* nav */
